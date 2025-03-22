@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
-import { CalendarDays, CheckCircle2, Clock, Layout } from 'lucide-react';
+import { CalendarDays } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { useEffect } from 'react';
 
