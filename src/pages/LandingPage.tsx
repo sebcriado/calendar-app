@@ -62,32 +62,34 @@ export default function LandingPage() {
       {/* Features Section */}
       <div className="py-24 bg-muted/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="bg-background rounded-2xl p-8 shadow-lg">
-              <div className="rounded-full bg-primary/10 p-3 w-fit mb-6">
-                <Clock className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Gestion du temps simplifiée</h3>
-              <p className="text-muted-foreground">
-                Visualisez votre semaine en un coup d'œil et organisez vos tâches efficacement.
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Section des désavantages */}
+            <div className="bg-red-950 text-white p-6 rounded-lg shadow-lg">
+              <h2 className="text-xl font-bold mb-4">Désavantages des applications de calendrier complexes</h2>
+              <ul className="space-y-3">
+                <li><span className="text-red-500 font-bold">1 hr</span> pour personnaliser l'interface</li>
+                <li><span className="text-red-500 font-bold">2 hrs</span> pour paramétrer les intégrations</li>
+                <li><span className="text-red-500 font-bold">2 hrs</span> pour explorer des fonctionnalités inutiles</li>
+                <li><span className="text-red-500 font-bold">∞ hrs</span> de frustration...</li>
+              </ul>
+              <p className="mt-4 font-bold text-red-400">
+                = Des heures de migraines <span className="text-xl">😣</span>
               </p>
             </div>
-            <div className="bg-background rounded-2xl p-8 shadow-lg">
-              <div className="rounded-full bg-primary/10 p-3 w-fit mb-6">
-                <Layout className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Interface intuitive</h3>
-              <p className="text-muted-foreground">
-                Une interface épurée et moderne pour une expérience utilisateur optimale.
-              </p>
-            </div>
-            <div className="bg-background rounded-2xl p-8 shadow-lg">
-              <div className="rounded-full bg-primary/10 p-3 w-fit mb-6">
-                <CheckCircle2 className="h-6 w-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Flexibilité totale</h3>
-              <p className="text-muted-foreground">
-                Ajoutez, modifiez et supprimez vos tâches en quelques clics.
+
+            {/* Section des avantages */}
+            <div className="bg-green-900 text-white p-6 rounded-lg shadow-lg">
+              <h2 className="text-xl font-bold mb-4">Avantages de Calendar App</h2>
+              <ul className="space-y-3">
+                <li><span className="text-green-400 font-bold">0 min</span> de configuration complexe</li>
+                <li><span className="text-green-400 font-bold">5 min</span> pour créer votre premier événement</li>
+                <li><span className="text-green-400 font-bold">2 min</span> pour maîtriser l'interface</li>
+                <li><span className="text-green-400 font-bold">3 min</span> pour visualiser votre semaine</li>
+                <li><span className="text-green-400 font-bold">1 min</span> pour modifier un événement</li>
+                <li><span className="text-green-400 font-bold">∞ hrs</span> de productivité gagnée...</li>
+              </ul>
+              <p className="mt-4 font-bold text-green-400">
+                = Des heures de simplicité <span className="text-xl">😌</span>
               </p>
             </div>
           </div>
