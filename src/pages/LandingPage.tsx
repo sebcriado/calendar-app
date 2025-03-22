@@ -102,7 +102,7 @@ export default function LandingPage() {
               Prêt à mieux organiser votre temps ?
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Rejoignez des milliers d'utilisateurs qui ont déjà simplifié leur gestion du temps
+              Rejoignez des centaines d'utilisateurs qui ont déjà simplifié leur gestion du temps
               avec notre calendrier hebdomadaire.
             </p>
             <Button
