@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { CalendarDays } from 'lucide-react';
 import { useAuth } from '@/lib/auth';
 import { useEffect } from 'react';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -24,6 +25,11 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Navigation avec ThemeToggle */}
+      <div className="absolute top-0 right-0 p-4 z-10">
+        <ThemeToggle />
+      </div>
+      
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 z-0" />
@@ -122,7 +128,7 @@ export default function LandingPage() {
       <footer className="border-t py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-sm text-muted-foreground">
-            <p>© 2024 Calendar App. Tous droits réservés.</p>
+            <p>© 2025 Calendar App. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
